@@ -125,23 +125,23 @@ $(document).ready(function () {
     whyHedge: {
       page: 2,
       id: 'why-hedge',
-      label: 'Why HEDGE'
-    },
-    whatWeDo: {
-      page: 3,
-      id: 'what-we-do',
-      label: 'What we do'
-    },
-    howWeDoIt: {
-      page: 4,
-      id: 'how-we-do-it',
-      label: 'How we do it'
+      label: 'Why UNREAL 361°'
     },
     thisIsUs: {
-      page: 5,
+      page: 3,
       id: 'this-is-us',
-      label: 'THIS IS US'
+      label: 'PORTFOLIO'
+    },
+    whatWeDo: {
+      page: 4,
+      id: 'what-we-do',
+      label: 'Contacts'
     }
+    // howWeDoIt: {
+    //   page: 5,
+    //   id: 'how-we-do-it',
+    //   label: 'How we do it'
+    // },
   }; // Generated page keys map, E.g. { 1: 'home', 2: 'whatWeDo' }
 
   var PAGE_KEYS = Object.keys(PAGES).reduce(function (pageKeys, key) {
@@ -159,8 +159,8 @@ $(document).ready(function () {
   });
   var curPage = null;
   var numOfPages = Object.keys(PAGES).length;
-  var invertedPages = [PAGES.whatWeDo.page, PAGES.howWeDoIt.page];
-  var coralLogo = [PAGES.home.page, PAGES.whyHedge.page, PAGES.whatWeDo.page, PAGES.howWeDoIt.page, PAGES.thisIsUs.page];
+  var invertedPages = [PAGES.whatWeDo.page];
+  var coralLogo = [PAGES.home.page, PAGES.whyHedge.page, PAGES.whatWeDo.page, PAGES.thisIsUs.page];
   var animTime = 1750;
   var isScrolling = false;
   var pgPrefix = ".skw-page-";
@@ -273,23 +273,23 @@ $(document).ready(function () {
   } // Team slider arrows
 
 
-  $('.team-slider').slick({
-    prevArrow: "<span class='slick-prev' style='background url(./img/left.svg)'></span>",
-    nextArrow: "<span class='slick-next' style='background url(./img/right.svg)'></span>",
-    dots: true
-  }); // Change slide by name
+  // $('.team-slider').slick({
+  //   prevArrow: "<span class='slick-prev' style='background url(./img/left.svg)'></span>",
+  //   nextArrow: "<span class='slick-next' style='background url(./img/right.svg)'></span>",
+  //   dots: true
+  // }); // Change slide by name
 
-  $('li[data-slide]').click(function () {
-    var slideno = $(this).data('slide');
-    $('.team-slider').slick('slickGoTo', slideno - 1);
-  }); // On team-slider click (update the list)
+  // $('li[data-slide]').click(function () {
+  //   var slideno = $(this).data('slide');
+  //   $('.team-slider').slick('slickGoTo', slideno - 1);
+  // }); // On team-slider click (update the list)
 
-  $('.team-slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
-    $('li[data-slide]').removeClass('selected');
-    $('li[data-slide]').eq(currentSlide).addClass('selected');
-  }); // Add iPad only to slick dots
+  // $('.team-slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+  //   $('li[data-slide]').removeClass('selected');
+  //   $('li[data-slide]').eq(currentSlide).addClass('selected');
+  // }); // Add iPad only to slick dots
 
-  $('.slick-dots').addClass('desktop-only'); // Set the first team member (mobile)
+  // $('.slick-dots').addClass('desktop-only'); // Set the first team member (mobile)
 
   if ($(window).width() <= 991) {
     // Update image
