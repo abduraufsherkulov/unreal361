@@ -672,7 +672,7 @@ body.skw-pages--inverted .nav-panel ul .nav-btn span {
   top: 0;
   left: 0;
   z-index: 999999999999999999;
-  background: #2d504b;
+  background: #fff;
 }
 
 /* NAV */
@@ -739,7 +739,7 @@ body.skw-pages--inverted .nav-panel ul .nav-btn span {
 #splash {
   height: 100vh;
   width: 100vw;
-  background: #000000;
+  background: #fff;
   position: absolute;
   z-index: 9999;
   display: flex;
@@ -1541,4 +1541,24 @@ textarea {
 }
 .logo-top-part img {
   width: 40%;
+}
+.hedge-logo--fixed h1 {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-align: center;
+  font: normal 60px/100px "futura-bold";
+  letter-spacing: 0;
+  color: #000000;
+  text-shadow: 3px 3px 6px #33323280;
+  opacity: 1;
+  margin: 0px;
+}
+.hedge-logo--fixed p {
+  text-align: center;
+  font: normal 60px/80px "futura-bold";
+  margin: 0px;
+  letter-spacing: 1.2px;
+  color: #000000;
+  text-shadow: 3px 3px 6px #7c7c7c80;
+  opacity: 1;
 }
