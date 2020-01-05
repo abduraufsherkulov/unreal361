@@ -656,10 +656,10 @@ body.skw-pages--inverted .nav-panel ul .nav-btn span {
 }
 .hedge-logo svg {
   height: 100%;
-  width: 30px;
+  width: 100px;
 }
 .hedge-logo svg g {
-  fill: #fa7d73;
+  fill: #000000!important;
   transition: fill 0.5s ease-in-out;
 }
 
@@ -1539,6 +1539,17 @@ textarea {
   bottom: 0;
   left: 30%;
 }
+
+.logo-bottom-part {
+  position: absolute;
+  bottom: 0;
+  right: 3%;
+}
+
+.logo-bottom-part img {
+  width: 40%;
+}
+
 .logo-top-part img {
   width: 40%;
 }
