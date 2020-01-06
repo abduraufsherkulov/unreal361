@@ -659,7 +659,33 @@ body.skw-pages--inverted .nav-panel ul .nav-btn span {
   width: 100px;
 }
 .hedge-logo svg g {
-  fill: #000000!important;
+  fill: #000000 !important;
+  transition: fill 0.5s ease-in-out;
+}
+
+#bottom-multi-logo {
+  cursor: default;
+  margin: initial;
+  opacity: 1;
+  position: fixed;
+  z-index: 9999999999;
+}
+#bottom-multi-logo {
+  left: 48.2vw;
+  height: 5vh;
+  top: 47vh;
+  transform: translate(-49%, -37.5vh);
+  transition-delay: 0.3s, 0.3s, 0s, 0.3s, 0.3s;
+  transition-duration: 0s, 0s, 0.3s, 0s, 0s;
+  transition-property: left, height, opacity, top, transform;
+  transition-timing-function: ease-in-out;
+}
+#bottom-multi-logo svg {
+  height: 100%;
+  width: 88%;
+}
+.bottom-multi-logo svg g {
+  fill: #000000 !important;
   transition: fill 0.5s ease-in-out;
 }
 

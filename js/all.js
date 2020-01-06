@@ -181,6 +181,16 @@ $(document).ready(function () {
       }
     });
     var pageKey = PAGE_KEYS[curPage];
+    if (pageKey == 'thisIsUs' || pageKey == 'whatWeDo') {
+      $('#main-centre-logo').hide();
+    } else {
+      $('#main-centre-logo').show();
+    }
+    if (pageKey == 'whatWeDo') {
+      $('#bottom-multi-logo').show();
+    } else {
+      $('#bottom-multi-logo').hide();
+    }
     history.pushState(null, null, '#' + PAGES[pageKey].id);
   }
 
