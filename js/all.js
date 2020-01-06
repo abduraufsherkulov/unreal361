@@ -124,17 +124,17 @@ $(document).ready(function () {
     },
     whyHedge: {
       page: 2,
-      id: 'why-hedge',
+      id: 'why-unreal-361',
       label: 'Why UNREAL 361°'
     },
     thisIsUs: {
       page: 3,
-      id: 'this-is-us',
+      id: 'portfolio',
       label: 'PORTFOLIO'
     },
     whatWeDo: {
       page: 4,
-      id: 'what-we-do',
+      id: 'contact',
       label: 'Contacts'
     }
     // howWeDoIt: {
@@ -147,7 +147,7 @@ $(document).ready(function () {
   var PAGE_KEYS = Object.keys(PAGES).reduce(function (pageKeys, key) {
     pageKeys[PAGES[key].page] = key;
     return pageKeys;
-  }, {}); // Generated page ids map, E.g. { 'homepage': 1, 'what-we-do': 2 }
+  }, {}); // Generated page ids map, E.g. { 'homepage': 1, 'contact': 2 }
 
   var PAGE_IDS = Object.keys(PAGES).reduce(function (pageIds, key) {
     pageIds[PAGES[key].id] = PAGES[key].page;
