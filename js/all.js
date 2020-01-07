@@ -181,7 +181,7 @@ $(document).ready(function () {
       }
     });
     var pageKey = PAGE_KEYS[curPage];
-    if (pageKey == 'thisIsUs' || pageKey == 'whatWeDo') {
+    if (pageKey == 'whatWeDo') {
       $('#main-centre-logo').hide();
     } else {
       $('#main-centre-logo').show();
