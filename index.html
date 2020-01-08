@@ -154,24 +154,6 @@
                         </g>
                     </g>
                 </svg>
-
-
-
-
-                <!-- <svg height="880" width="55" viewBox="0 0 55 880" width="55" xmlns="../www.w3.org/2000/svg.html">
-                    <g fill-rule="evenodd" transform="translate(0 -.00052)">
-                        <path
-                            d="m36.7478571 0v46.6114032h-18.6253571v-46.6114032h-18.1225v114.480591h18.1225v-51.5170459h18.6253571v51.5170459h18.1211905v-114.480591z" />
-                        <path
-                            d="m0 190.426281v114.48059h54.8690476v-16.354741h-36.7465476v-35.162304h30.3207143v-16.353442h-30.3207143v-30.255362h36.7465476v-16.354741z" />
-                        <path
-                            d="m.08407143 380.852431h27.67940477c18.125119 0 27.0207143 9.976367 27.0207143 28.292585v57.894121c0 18.316219-8.8955953 28.293885-27.0207143 28.293885h-27.67940477zm27.35071427 98.12455c5.7658333 0 9.2269048-2.942866 9.2269048-11.118937v-59.530635c0-8.176071-3.4610715-11.120236-9.2269048-11.120236h-9.2269047v81.769808z" />
-                        <path
-                            d="m.41407143 660.245802v-60.184461c0-18.316218 9.22690476-28.781329 27.02202377-28.781329 17.7925 0 27.0194048 10.465111 27.0194048 28.781329v9.811285h-17.135119v-10.956455c0-8.176071-3.624762-11.284017-9.3919048-11.284017-5.7645238 0-9.3905952 3.107946-9.3905952 11.284017v62.639882c0 8.174771 3.6260714 11.118937 9.3905952 11.118937 5.7671428 0 9.3919048-2.944166 9.3919048-11.118937v-22.405554h-9.0619048v-16.356041h26.1970238v37.451344c0 18.318818-9.2269048 28.785229-27.0194048 28.785229-17.79511901 0-27.02202377-10.466411-27.02202377-28.785229" />
-                        <path
-                            d="m0 764.974901v114.479291h54.8690476v-16.356041h-36.7465476v-35.158405h30.3207143v-16.354742h-30.3207143v-30.256661h36.7465476v-16.353442z" />
-                    </g>
-                </svg> -->
             </div>
 
             <div class="skw-page__half skw-page__half--right">
@@ -425,12 +407,25 @@ c0.07,0,0.12,0,0.17,0c0.77-0.09,1.47-0.36,2.11-0.82c0.63-0.45,0.95-1.11,0.95-1.9
                                 <input placeholder="Phone number" type="text">
                                 <textarea rows="4" placeholder="Describe your project"></textarea>
                                 <div>
-                                    <a class="btn invert">
+                                    <!-- Hide this from the users view with css display:none; -->
+                                    <input style="display:none" class="display-none" id="file-type" type="file" size="4"
+                                        name="file" />
+
+                                    <!-- Style this button with type image or css whatever you wish -->
+                                    <!-- <input id="browse-click" type="button" class="button" value="Browse for files" /> -->
+
+                                    <a id="browse-click" class="btn invert">
                                         Upload file
                                     </a>
+                                    <!-- <input id="browse-click" type="button" class="btn invert" value="Upload file" /> -->
                                     <a class="btn invert">
                                         Get a quote
                                     </a>
+                                    <br>
+                                    <p style="background: #f8f9fa!important; color:  #343a40!important">
+                                        <span id="filename"></span>
+                                        <span id="x" style="float: right; cursor: pointer">x</span>
+                                    </p>
                                 </div>
                             </form>
                         </div>
@@ -439,59 +434,6 @@ c0.07,0,0.12,0,0.17,0c0.77-0.09,1.47-0.36,2.11-0.82c0.63-0.45,0.95-1.11,0.95-1.9
             </div>
         </div>
 
-        <!-- PAGE: How We Do It -->
-        <!-- <div id="how-we-do-it" class="skw-page">
-            <div class="skw-page__half skw-page__half--left">
-                <div class="skw-page__skewed">
-                    <div class="skw-page__content">
-                        <video class="video"  style="height: 100px; min-height: 300vh; width: 130vw; margin-left: -30vw; margin-bottom: 5vh;" loop muted playsinline preload="metadata">
-                        <source src="./videos/Hedge-HowWeDoIt.mp4" type="video/mp4">
-                        Your browser does not support HTML5 video.
-                    </video>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skw-page__half skw-page__half--right">
-                <div class="skw-page__skewed">
-                    <div class="skw-page__content">
-                        <div class="center-content-right">
-                            <h2 class="skw-page__heading">How we do it</h2>
-                            <p class="skw-page__description" style="text-align:left;">Drawing from over 50 years of
-                                industry experience, we developed <strong>HEDGE</strong> from the ground up;
-                                unconstrained by existing norms or processes.</p>
-
-                            <p class="skw-page__description" style="text-align:left;">Embracing our proprietary
-                                technology platform, our work is underpinned by smart data to provide actionable
-                                insight, significantly differentiating <strong>HEDGE</strong>.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!--    <div class="skw-page skw-page-5" id="5">-->
-        <!--        <div class="skw-page__half skw-page__half--left">-->
-        <!--            <div class="skw-page__skewed">-->
-        <!--                <div class="skw-page__content">-->
-        <!--                    <div class="center-content">-->
-        <!--                        <h2 class="skw-page__heading">Page 5</h2>-->
-        <!--                        <p class="skw-page__description" style="text-align:left;">Next-generation commercial space matchmaking. Browse available space or speak to us directly.</p>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--        <div class="skw-page__half skw-page__half--right">-->
-        <!--            <div class="skw-page__skewed">-->
-        <!--                <div class="skw-page__content">-->
-        <!--                    <video class="video" loop muted playsinline preload="metadata">-->
-        <!--                        <source src="./videos/london.mp4" type="video/mp4">-->
-        <!--                        Your browser does not support HTML5 video.-->
-        <!--                    </video>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--    </div>-->
-
     </div>
 
     <div class="nav-panel" id="nav-panel">
@@ -499,48 +441,6 @@ c0.07,0,0.12,0,0.17,0c0.77-0.09,1.47-0.36,2.11-0.82c0.63-0.45,0.95-1.11,0.95-1.9
             <ul id="main-navigation"></ul>
         </nav>
     </div>
-
-    <!--- Slide out pages -->
-
-    <!-- Full page -->
-    <!-- <div class="full-page">
-        <div class="full-page-left">
-            <div class="full-page-left-content">
-                <img class="arrow-back" src="./img/arrow-back.svg" />
-                <h2 class="skw-page__heading">10 Fenchurch Avenue</h2>
-                <p class="lead">The property is multi-let to seven office tenants and one retail tenant providing good
-                    diversity of income.</p>
-                <ul>
-                    <li>Business lounge</li>
-                    <li>Grade A office space</li>
-                    <li>Day office</li>
-                    <li>Virtual offices available</li>
-                    <li>Meeting room</li>
-                    <li>On site cafe</li>
-                </ul>
-                <div class="full-page-left-buttons">
-                    <div>
-                        <a class="btn invert">
-                            Enquire
-                        </a>
-                    </div>
-                    <div>
-                        <a class="btn invert">
-                            Download brochure
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="full-page-right">
-            <a data-fancybox="gallery" href="./img/1.jpg" class="btn">View gallery</a>
-            <a data-fancybox="gallery" href="./img/2.jpg"></a>
-            <a data-fancybox="gallery" href="./img/3.jpg"></a>
-            <a data-fancybox="gallery" href="./img/4.jpg"></a>
-            <a data-fancybox="gallery" href="./img/5.jpg"></a>
-        </div>
-    </div> -->
-
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/charming.min.js"></script>
     <script src="js/vendor/TweenMax.min.js"></script>
@@ -567,6 +467,38 @@ c0.07,0,0.12,0,0.17,0c0.77-0.09,1.47-0.36,2.11-0.82c0.63-0.45,0.95-1.11,0.95-1.9
                 arrows: false
             });
         });
+    </script>
+    <script>
+
+        $(window).on('load', function () {
+            $('#x').css('visibility', 'hidden');
+            var intervalFunc = function () {
+                $('#file-name').html($('#file-type').val());
+            };
+            $('#browse-click').on('click', function () { // use .live() for older versions of jQuery
+                let control = document.getElementById('file-type');
+                $('#file-type').click();
+                if ($("input[type=file]")[0].files.length == 1) {
+                    control.value = '';
+                    $('#filename').text("");
+                    $('#x').css('visibility', 'hidden');
+                }
+                setInterval(intervalFunc, 1);
+                return false;
+            });
+        });
+
+        $("input[type=file]").on('change', function () {
+            $('#filename').text(this.files[0].name);
+            $('#x').css('visibility', 'visible');
+        });
+        $('#x').click(function () {
+            let control = document.getElementById('file-type');
+            control.value = '';
+            $('#filename').text("");
+            $('#x').css('visibility', 'hidden');
+        })
+
     </script>
     <!-- Bundled JS -->
     <script src="js/all.js"></script>
