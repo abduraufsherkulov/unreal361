@@ -191,14 +191,25 @@
         <div id="why-unreal-361" class="skw-page">
             <div class="skw-page__half skw-page__half--left">
                 <div class="skw-page__skewed">
-                    <!-- <div class="skw-page__content">
-                <video class="video" style="height: 100px; min-height: 300vh; margin-left: -50vw; margin-bottom: 50vh;" loop muted playsinline preload="metadata">
-                    <source src="./videos/why-hedge.mp4" type="video/mp4">
-                    Your browser does not support HTML5 video.
-                </video>
-            </div> -->
+
                     <div class="skw-page__content">
-                        <!-- Background-->
+                        <div class="my-class" style="width: 100%;box-sizing: border-box; min-height: 100%">
+                            <div><img style="width: 100%;min-height: 100vh;object-fit: cover;" src="./img/left_1.jpeg"
+                                    alt="">
+                            </div>
+                            <div><img style="width: 100%;min-height: 100vh;object-fit: cover;" src="./img/left_2.jpeg"
+                                    alt="">
+                            </div>
+                            <div><img style="width: 100%;min-height: 100vh;object-fit: cover;" src="./img/left_3.jpeg"
+                                    alt="">
+                            </div>
+                            <div><img style="width: 100%;min-height: 100vh;object-fit: cover;" src="./img/left_4.jpeg"
+                                    alt="">
+                            </div>
+                            <div><img style="width: 100%;min-height: 100vh;object-fit: cover;" src="./img/left_5.jpeg"
+                                    alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -534,7 +545,17 @@ c0.07,0,0.12,0,0.17,0c0.77-0.09,1.47-0.36,2.11-0.82c0.63-0.45,0.95-1.11,0.95-1.9
             $('.your-class').slick({
                 infinite: true,
                 dots: true,
-                arrows: false,
+                arrows: false
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.my-class').slick({
+                infinite: true,
+                dots: true,
+                arrows: false
             });
         });
     </script>

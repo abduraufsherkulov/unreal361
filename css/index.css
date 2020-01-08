@@ -571,12 +571,19 @@ body.skw-pages--inverted .nav-panel ul .nav-btn span {
 }
 
 #why-unreal-361 .skw-page__half--left .skw-page__content {
-  background: url(../img/second.png);
+  /* width: 50vw;
+  background: #2d504b;
   padding: 0;
   min-height: 100vh;
-  background-repeat: no-repeat;
-  min-width: 50vw;
-  background-position: 125.5px 0px;
+  min-width: 50vw; */
+  /* left: 28%!important; */
+  padding: 0px;
+  width: 50vw;
+  /* min-height: 75vw; */
+}
+#why-unreal-361 .skw-page__half--left .skw-page__skewed{
+  left: 0%!important; 
+  width: 50vw;
 }
 
 #why-unreal-361 .skw-page__half--right .skw-page__content {
